@@ -1,0 +1,176 @@
+@media(max-width:1400px) {
+    .el-card__body {
+        display: flex;
+        flex-direction: column;
+
+        .el-col {
+            width: 100%;
+            .image {
+                text-align: center;
+                img {
+                    width: 15.4rem !important;
+                    margin-right: 0 !important;
+                    margin: 0 auto;
+                }
+            }
+        }
+        .learning-content {
+            margin-top: 1rem;
+            .learning-title {
+                a {
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+            }
+            .learning-content {
+                a {
+                    p {
+                        display: -webkit-box;
+                        -webkit-line-clamp: 3;
+                        -webkit-box-orient: vertical;
+                        overflow: hidden;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+@media(max-width:414px) {
+    .el-card__body {
+        .learning-content {
+            .learning-footer {
+                margin-left: 0.567rem !important;
+            }
+        }
+    }
+}
+
+.learning-page {
+    .el-card {
+        margin: 0.667rem;
+        padding: 1.33rem;
+
+        .el-card__body {
+            padding: 0;
+            width: 100%;
+
+            .el-col {
+                white-space: nowrap;
+                text-overflow: ellipsis;
+
+                .image {
+                    width: 100%;
+
+                    img {
+                        width: 14.4rem;
+                        height: 10rem;
+                        margin-right: 1.33rem;
+                        transition: all 0.5s ease;
+                        cursor: pointer;
+
+                        &:hover {
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+
+                .learning-title {
+                    margin-left: 0.667rem;
+                    text-align: center;
+
+                    a {
+                        color: #000;
+                        font-weight: bold;
+                        transition: all 0.5s ease;
+                        display: block;
+                        cursor: pointer;
+
+                        &:hover {
+                            color: #409EFF;
+                            transform: scale(1.2);
+                        }
+
+                        span {
+                            font-weight: normal;
+                            padding: 0.33rem;
+                            font-size: 0.8rem;
+                            color: #fff;
+                            background-image: linear-gradient(0deg, rgba(253, 165, 34, 0.92941176) 0%, #fd4c4c 100%);
+                        }
+                    }
+                }
+
+                .learning-content {
+                    margin: 1.33rem;
+                    padding-left: 1.33rem;
+                    line-height: 1.667rem;
+                    white-space: pre-wrap;
+                    color: #555;
+                    text-indent: 2em;
+
+                    a {
+                        color: #555;
+                        transition: all 0.5s ease;
+
+                        &:hover {
+                            color: #409EFF;
+                        }
+                    }
+                }
+
+                .learning-footer {
+
+                    margin-left: 2.667rem;
+
+                    a {
+                        display: inline-block;
+                        color: #666;
+                        font-size: 0.8rem;
+
+                        .footer-img {
+                            vertical-align: middle;
+                            border-radius: 50%;
+                        }
+
+                        span.separator {
+                            color: #e1e1e1;
+                            padding: 0 0.33rem;
+                        }
+
+                        &:hover {
+                            color: #409EFF;
+
+                            span {
+                                color: #e1e1e1;
+                            }
+                        }
+                    }
+
+                    .time {
+                        display: inline-block;
+                        color: #666;
+                        font-size: 0.8rem;
+
+                        span.separator {
+                            color: #e1e1e1;
+                            padding: 00.33rem;
+                        }
+                    }
+
+                    .read {
+                        color: #666;
+                        font-size: 0.8rem;
+                    }
+
+
+                }
+
+            }
+        }
+    }
+
+
+}

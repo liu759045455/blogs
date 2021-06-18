@@ -1,0 +1,118 @@
+@media(max-width:375px) {
+    .card-content{
+        a {
+            .image {
+                position: relative;
+                left: -1.5rem;
+                width: 86vw !important;
+            }
+        }
+    }
+}
+@media(max-width:1400px) { 
+    .el-card__body {
+        padding: 1rem;
+    }
+    
+    .card-content{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        a {
+            display: block !important;
+            margin: 0.3rem auto;
+        }
+    }
+    .content-card {
+        margin-right: 0 !important;
+        .box-card .card-content .image{
+            margin-right: 0 !important;
+        }
+    }
+    .clearfix {
+        span {
+            text-align: center;
+        }
+    }
+}
+
+
+.content-page {
+    .content-card {
+        margin-right: 0.8rem;
+
+        .el-card {
+            padding: 1.33rem 2rem 1.667rem 2rem;
+            position: relative;
+            margin-top: 1.33rem;
+            &:first-of-type{
+                margin-top: 1.33rem;
+            }
+        }
+
+        .box-card {
+            .clearfix {
+                span {
+                    display: block;
+                    font-weight: bold;
+
+                    a {
+                        text-decoration: none;
+                        transition: all 0.5s ease;
+                        display: block;
+                        color: #000;
+
+                        &:hover {
+                            color: #3f8efd;
+                            cursor: pointer;
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+            }
+
+            .card-content {
+                line-height: 1.866rem;
+                position: relative;
+                min-height: 13.33rem;
+
+                .image {
+                    cursor: pointer;
+                    display: block;
+                    width: 20rem;
+                    height: 12rem;
+                    border: 0.08rem solid #e8e9e7;
+                    overflow: hidden;
+                    float: left;
+                    margin-right: 1.33rem;
+                    transition: all 0.5s ease;
+
+                    &:hover {
+                        cursor: pointer;
+                        transform: scale(0.9) rotate(10deg);
+                    }
+                }
+
+                a {
+                    text-decoration: none;
+                    transition: all 0.5s ease;
+                    display: block;
+                    color: #000;
+
+                    &:hover {
+                        color: #3f8efd;
+                        cursor: pointer;
+                    }
+                }
+
+                .card-text {
+                    cursor: pointer;
+                    font-size: 0.9rem;
+                }
+            }
+
+        }
+
+    }
+
+}

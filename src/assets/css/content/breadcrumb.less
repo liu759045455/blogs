@@ -1,0 +1,43 @@
+@import url(//at.alicdn.com/t/font_2049338_3vqr9oquwos.css);
+
+.content-breadcrumb {
+    margin: 0.667rem 0 0.667rem;
+    height: 1.33rem;
+    line-height: 1.33rem;
+    vertical-align: top;
+
+    .el-breadcrumb {
+        .el-breadcrumb__item {
+            span {
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+
+
+
+@media(max-width:910px) {
+    .el-breadcrumb {
+        display: flex;
+        flex-wrap: nowrap;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        .el-breadcrumb__item {
+
+            span {
+                font-size: 0.75rem !important;
+
+                &:nth-of-type(3) {
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+            }
+
+        }
+    }
+}

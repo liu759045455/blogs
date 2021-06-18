@@ -1,0 +1,76 @@
+@import '//at.alicdn.com/t/font_2049338_3vqr9oquwos.css';
+
+
+@media(max-width:845px) {
+    
+    .m-menu {
+        // display: none;
+        box-sizing: border-box !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    .menu-nav {
+        box-sizing: border-box !important;
+        margin-top: 1rem;
+        border-radius: 0.5rem;
+        font-size: 0.6rem !important;
+    }
+    .el-header {
+        box-sizing: border-box !important;
+        padding: 0 0 1rem 0;
+    }
+    .header-images {
+        height: 25vh;
+    }
+
+}
+.el-header {
+    padding: 0 0 !important;
+}
+.header {
+    width: 100vw;
+
+    .header-images {
+        background: url("https://s1.tuchong.com/content-image/202101/0fb91c90394910a8ae21e272817c7a15.jpg") no-repeat center center;
+        width: 100vw;
+        height: 40vh;
+    }
+    
+    .m-menu {
+        margin: 2rem 10rem;
+        
+        .menu-nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #E5C7A1;
+            color: #000;
+            font-size: 1.3rem;
+            border-radius: 1rem;
+
+            li {
+                height: 3rem;
+                line-height: 3rem;
+                cursor: pointer;
+                font-weight: bold;
+
+                >a {
+                    text-decoration: none;
+                    color: #000;
+
+                    &.router-link-active {
+                        color: #fff;
+                    }
+                }
+
+                &:hover {
+                    transition: all 0.3s;
+
+                    >a {
+                        color: #fff;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}
